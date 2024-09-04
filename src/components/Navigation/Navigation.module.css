@@ -1,0 +1,71 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(101, 210, 218, 0.502);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
+  }
+  
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .headerContainer {
+      width: 768px;
+      gap: 12px;
+    }
+  }
+  
+  @media only screen and (min-width: 1140px) {
+    .headerContainer {
+      width: 1144px;
+      gap: 12px;
+    }
+  }
+  
+  .logo {
+    display: flex;
+    margin-right: 24px;
+  }
+  
+  .logoIcon {
+    color: var(--default-accent-color);
+    transition: color 100ms linear;
+  }
+  
+  .logoIcon:hover,
+  .logoIcon:focus-visible,
+  .logoIcon:active {
+    color: rgb(39, 84, 134);
+  }
+  
+  .link {
+    color: var(--default-accent-color);
+    transition: color 100ms linear;
+  }
+  
+  .link:hover,
+  .link:focus-visible,
+  .link:active {
+    color: rgb(39, 84, 134);
+  }
+  
+  .active {
+    color: rgb(39, 84, 134);
+  }

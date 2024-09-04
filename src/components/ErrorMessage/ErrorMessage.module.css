@@ -1,0 +1,8 @@
+.errorMsg {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--default-accent-color);
+    font-size: 34px;
+    padding: 20px;
+  }
+  
